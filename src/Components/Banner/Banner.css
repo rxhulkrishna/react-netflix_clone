@@ -1,0 +1,54 @@
+.banner {
+    height: 600px;
+    background-color: black;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.content{
+    margin: 200px 0px 0px 100px;
+}
+
+.content h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.content p{
+    margin-top: 20px;
+    max-width: 700px;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.buttons button {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    background: transparent;
+    border-color: transparent;
+    outline-color: transparent;
+}
+
+.buttons button:first-child{
+    border-radius: 20px;
+    background-color: #D81F26;
+    box-shadow: 1px 5px 20px rgba(172, 0, 0, 0.753);
+    transition: .2s ease-in-out;
+}
+
+.buttons button:first-child:hover{
+    background-color: #c0171d;
+}
+
+
+.buttons button:last-child span {
+    font-size: 35px;
+}

@@ -1,0 +1,44 @@
+.myLists h1{
+    margin: 0 0 0 6rem;
+}
+
+.Lists {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    overflow-x: scroll;
+}
+
+.Lists::-webkit-scrollbar{
+    display: none;
+}
+
+.List {
+    margin-top: 2rem;
+    position: relative;
+}
+
+.List .overlay {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.List img {
+    border-radius: 10px;
+    height: 300px;
+}
+
+.List img:hover{
+    opacity: 0.5;
+}
+
+.List:first-child {
+    margin-left: 6rem;
+}
+
+.List:last-child {
+    margin-right: 6rem;
+}
