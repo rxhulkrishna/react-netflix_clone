@@ -10,6 +10,20 @@
 }
 
 body {
+    width: 100vw;
+    overflow-x: hidden;
     font-family: 'Quicksand', sans-serif;
     background-color: rgb(0, 0, 0);
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 0.3em;
+    background-color: transparent;
+}
+
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #231f1f;
 }

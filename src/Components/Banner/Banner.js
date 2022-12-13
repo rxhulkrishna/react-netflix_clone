@@ -5,10 +5,11 @@ import { trending } from '../../Urls/urls'
 import { IMAGE_URL } from '../../Constants/constants'
 
 function Banner() {
+
   const [movie,setMovie] = useState([])
   useEffect(() => {
     axios.get(`${trending}`).then(response=>{
-      setMovie(response.data.results[19])
+      setMovie(response.data.results[18])
   }).catch(err=>{
     alert('Network Error')
   })
@@ -17,8 +18,8 @@ function Banner() {
   return (
     <div style={{backgroundImage:`linear-gradient(
       to top,
-      rgb(0,0,0,1) 1%,
-      rgba(0,0,0,0)
+      rgba(0,0,0,1) 10%,
+      rgba(0,0,0,0) 
     ),url(${IMAGE_URL+ movie.backdrop_path })`}} className='banner'>
         <div className="content">
             <h1>{movie ? movie.name||movie.title : ""}</h1>
